@@ -1,4 +1,19 @@
 
+/***
+ *   
+ * Rajador Developer
+ * 
+ * ▒█▀▀█ ░█▀▀█ ░░░▒█ ░█▀▀█ ▒█▀▀▄ ▒█▀▀▀█ ▒█▀▀█ 
+ * ▒█▄▄▀ ▒█▄▄█ ░▄░▒█ ▒█▄▄█ ▒█░▒█ ▒█░░▒█ ▒█▄▄▀ 
+ * ▒█░▒█ ▒█░▒█ ▒█▄▄█ ▒█░▒█ ▒█▄▄▀ ▒█▄▄▄█ ▒█░▒█
+ * 
+ * GitHub: https://github.com/rajadordev
+ * 
+ * Discord: rajadortv
+ * 
+ * 
+**/ 
+
 const NORMAL_CHARS = 'abcdefghijklmnopqrstuvwxyz';
 
 const NUMBERS_CHARS = '1234567890';
@@ -181,4 +196,5 @@ async function generatePasswordFromInputs() {
     const password = await generatePassword(length, chars, getStrongLevelIndex() > 0);
     return password;
 }
+
 
