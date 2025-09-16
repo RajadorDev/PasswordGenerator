@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles/index_styles.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="script/password_generator.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Password Generator</h1>
+        <div class="password-area">
+            <div class="mb-3">
+                <label class="info-label form-label" for="password-length-input">
+                    Characters count
+                </label>
+                <input class="form-control" name="password-length-input" id="password-length" type="number" value="12" min="4" max="30">
+            </div>
+            <div class="password-strength">
+                <h2>Password Strength</h2>
+                <label>
+                    Weak
+                    <input type="checkbox" name="strength" value="weak">
+                </label>
+                <label>
+                    Medium
+                    <input type="checkbox" name="strength" value="medium" checked>
+                </label>
+                <label>
+                    Strong
+                    <input type="checkbox" name="strength" value="strong">
+                </label>
+                <label>
+                    Strongest
+                    <input type="checkbox" name="strength" value="strongest">
+                </label>
+            </div>
+            <input type="text" disabled id="password-input">
+            <div class="password-buttons">
+                <button disabled class="copy-button btn" copy="password-input" id="copy">Copy</button>
+                <button id="generate-button" class="btn">Generate</button>
+            </div>
+        </div>
+        <span id="credits">By <a href="https://github.com/RajadorDev">Rajador Developer</a> </span>
+    </main>
+</body>
+</html>
