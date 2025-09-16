@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
-    background-image: url('/assets/background.jpg');
+    background-image: url('./assets/background.jpg');
     background-size: cover;
 }
 
@@ -117,4 +117,5 @@ main {
 input[type="checkbox"] {
     cursor: pointer;
 }
+
 
