@@ -192,9 +192,9 @@ function toggleOpenButton(open) {
 async function generatePasswordFromInputs() {
     const chars = getPasswordChars();
     const length = getPasswordLength();
-    console.log(getStrongLevelIndex());
     const password = await generatePassword(length, chars, getStrongLevelIndex() > 0);
     return password;
 }
+
 
 
